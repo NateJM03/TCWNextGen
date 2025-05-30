@@ -1,0 +1,42 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:NexradViewer"
+             x:Class="NexradViewer.App">
+    <Application.DataTemplates>
+        
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme />
+        
+        <!-- Custom styles -->
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#0078D7"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="Padding" Value="12,6"/>
+        </Style>
+        
+        <Style Selector="Button:pointerover">
+            <Setter Property="Background" Value="#1C84DC"/>
+        </Style>
+        
+        <Style Selector="Button:pressed">
+            <Setter Property="Background" Value="#006CBE"/>
+        </Style>
+        
+        <Style Selector="ComboBox">
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="MinHeight" Value="30"/>
+        </Style>
+        
+        <Style Selector="TextBlock">
+            <Setter Property="Foreground" Value="#333333"/>
+        </Style>
+        
+        <Style Selector="ToggleSwitch">
+            <Setter Property="OnContent" Value=""/>
+            <Setter Property="OffContent" Value=""/>
+        </Style>
+    </Application.Styles>
+</Application>

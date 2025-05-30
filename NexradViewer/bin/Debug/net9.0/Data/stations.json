@@ -1,0 +1,454 @@
+{
+  "stations": [
+    {
+      "id": "KABR",
+      "name": "Aberdeen",
+      "state": "SD",
+      "latitude": 45.4558,
+      "longitude": -98.4130,
+      "elevation": 397.2,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KABX",
+      "name": "Albuquerque",
+      "state": "NM",
+      "latitude": 35.1497,
+      "longitude": -106.8237,
+      "elevation": 1789.8,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KAKQ",
+      "name": "Norfolk/Richmond",
+      "state": "VA",
+      "latitude": 36.9840,
+      "longitude": -77.0075,
+      "elevation": 34.4,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KAMA",
+      "name": "Amarillo",
+      "state": "TX",
+      "latitude": 35.2335,
+      "longitude": -101.7094,
+      "elevation": 1093.6,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KAMX",
+      "name": "Miami",
+      "state": "FL",
+      "latitude": 25.6111,
+      "longitude": -80.4130,
+      "elevation": 4.6,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KAPX",
+      "name": "Gaylord",
+      "state": "MI",
+      "latitude": 44.9072,
+      "longitude": -84.7197,
+      "elevation": 446.3,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KARX",
+      "name": "La Crosse",
+      "state": "WI",
+      "latitude": 43.8232,
+      "longitude": -91.1915,
+      "elevation": 389.2,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KATX",
+      "name": "Seattle/Tacoma",
+      "state": "WA",
+      "latitude": 48.1945,
+      "longitude": -122.4957,
+      "elevation": 151.8,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBBX",
+      "name": "Sacramento",
+      "state": "CA",
+      "latitude": 39.4963,
+      "longitude": -121.6316,
+      "elevation": 52.6,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBGM",
+      "name": "Binghamton",
+      "state": "NY",
+      "latitude": 42.1997,
+      "longitude": -75.9847,
+      "elevation": 491.7,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBHX",
+      "name": "Eureka",
+      "state": "CA",
+      "latitude": 40.4986,
+      "longitude": -124.2918,
+      "elevation": 732.8,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBIS",
+      "name": "Bismarck",
+      "state": "ND",
+      "latitude": 46.7708,
+      "longitude": -100.7601,
+      "elevation": 504.7,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBLX",
+      "name": "Billings",
+      "state": "MT",
+      "latitude": 45.8538,
+      "longitude": -108.6069,
+      "elevation": 1097.3,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBMX",
+      "name": "Birmingham",
+      "state": "AL",
+      "latitude": 33.1722,
+      "longitude": -86.7697,
+      "elevation": 197.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBOX",
+      "name": "Boston",
+      "state": "MA",
+      "latitude": 41.9544,
+      "longitude": -71.1369,
+      "elevation": 36.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBRO",
+      "name": "Brownsville",
+      "state": "TX",
+      "latitude": 25.9161,
+      "longitude": -97.4187,
+      "elevation": 7.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBUF",
+      "name": "Buffalo",
+      "state": "NY",
+      "latitude": 42.9488,
+      "longitude": -78.7369,
+      "elevation": 211.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KBYX",
+      "name": "Key West",
+      "state": "FL",
+      "latitude": 24.5975,
+      "longitude": -81.7033,
+      "elevation": 2.4,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCAE",
+      "name": "Columbia",
+      "state": "SC",
+      "latitude": 33.9487,
+      "longitude": -81.1185,
+      "elevation": 70.1,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCBW",
+      "name": "Caribou",
+      "state": "ME",
+      "latitude": 46.0392,
+      "longitude": -67.8038,
+      "elevation": 227.1,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCBX",
+      "name": "Boise",
+      "state": "ID",
+      "latitude": 43.4906,
+      "longitude": -116.2360,
+      "elevation": 933.3,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCCX",
+      "name": "State College",
+      "state": "PA",
+      "latitude": 40.9230,
+      "longitude": -78.0038,
+      "elevation": 728.5,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCLE",
+      "name": "Cleveland",
+      "state": "OH",
+      "latitude": 41.4131,
+      "longitude": -81.8597,
+      "elevation": 232.3,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCLX",
+      "name": "Charleston",
+      "state": "SC",
+      "latitude": 32.6557,
+      "longitude": -81.0422,
+      "elevation": 30.5,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCRI",
+      "name": "Norman (Test)",
+      "state": "OK",
+      "latitude": 35.2383,
+      "longitude": -97.4625,
+      "elevation": 357.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCRP",
+      "name": "Corpus Christi",
+      "state": "TX",
+      "latitude": 27.7842,
+      "longitude": -97.5111,
+      "elevation": 14.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCXX",
+      "name": "Burlington",
+      "state": "VT",
+      "latitude": 44.5109,
+      "longitude": -73.1663,
+      "elevation": 96.9,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KCYS",
+      "name": "Cheyenne",
+      "state": "WY",
+      "latitude": 41.1519,
+      "longitude": -104.8061,
+      "elevation": 1868.7,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDAX",
+      "name": "Sacramento",
+      "state": "CA",
+      "latitude": 38.5011,
+      "longitude": -121.6778,
+      "elevation": 9.1,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDDC",
+      "name": "Dodge City",
+      "state": "KS",
+      "latitude": 37.7608,
+      "longitude": -99.9689,
+      "elevation": 789.1,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDFX",
+      "name": "Del Rio",
+      "state": "TX",
+      "latitude": 29.2727,
+      "longitude": -100.2797,
+      "elevation": 345.6,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDIX",
+      "name": "Philadelphia",
+      "state": "PA",
+      "latitude": 39.9469,
+      "longitude": -74.4108,
+      "elevation": 44.5,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDLH",
+      "name": "Duluth",
+      "state": "MN",
+      "latitude": 46.8370,
+      "longitude": -92.2098,
+      "elevation": 435.6,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDMX",
+      "name": "Des Moines",
+      "state": "IA",
+      "latitude": 41.7312,
+      "longitude": -93.7229,
+      "elevation": 299.9,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDOX",
+      "name": "Dover AFB",
+      "state": "DE",
+      "latitude": 38.8258,
+      "longitude": -75.4401,
+      "elevation": 15.2,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDTX",
+      "name": "Detroit",
+      "state": "MI",
+      "latitude": 42.7000,
+      "longitude": -83.4717,
+      "elevation": 326.7,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDVN",
+      "name": "Quad Cities",
+      "state": "IA",
+      "latitude": 41.6116,
+      "longitude": -90.5809,
+      "elevation": 230.1,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KDYX",
+      "name": "Abilene/Dyess AFB",
+      "state": "TX",
+      "latitude": 32.5383,
+      "longitude": -99.2544,
+      "elevation": 461.8,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KEAX",
+      "name": "Kansas City",
+      "state": "MO",
+      "latitude": 38.8101,
+      "longitude": -94.2644,
+      "elevation": 303.3,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KEMX",
+      "name": "Tucson",
+      "state": "AZ",
+      "latitude": 31.8937,
+      "longitude": -110.6303,
+      "elevation": 1586.5,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KEOX",
+      "name": "Fort Rucker",
+      "state": "AL",
+      "latitude": 31.4603,
+      "longitude": -85.4592,
+      "elevation": 132.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KEPZ",
+      "name": "El Paso",
+      "state": "TX",
+      "latitude": 31.8731,
+      "longitude": -106.6979,
+      "elevation": 1251.2,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KESX",
+      "name": "Las Vegas",
+      "state": "NV",
+      "latitude": 35.7011,
+      "longitude": -114.8918,
+      "elevation": 1483.5,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KEVX",
+      "name": "Eglin AFB",
+      "state": "FL",
+      "latitude": 30.5644,
+      "longitude": -85.9214,
+      "elevation": 43.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KEWX",
+      "name": "Austin/San Antonio",
+      "state": "TX",
+      "latitude": 29.7038,
+      "longitude": -98.0283,
+      "elevation": 195.1,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KEYX",
+      "name": "Edwards AFB",
+      "state": "CA",
+      "latitude": 35.0979,
+      "longitude": -117.5618,
+      "elevation": 840.0,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KFCX",
+      "name": "Roanoke",
+      "state": "VA",
+      "latitude": 37.0242,
+      "longitude": -80.2736,
+      "elevation": 872.7,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KFDR",
+      "name": "Frederick",
+      "state": "OK",
+      "latitude": 34.3620,
+      "longitude": -98.9764,
+      "elevation": 383.4,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KFFC",
+      "name": "Atlanta",
+      "state": "GA",
+      "latitude": 33.3635,
+      "longitude": -84.5658,
+      "elevation": 262.1,
+      "towerHeight": 30.0
+    },
+    {
+      "id": "KFSD",
+      "name": "Sioux Falls",
+      "state": "SD",
+      "latitude": 43.5878,
+      "longitude": -96.7294,
+      "elevation": 435.9,
+      "towerHeight": 30.0
+    }    
+  ]
+}

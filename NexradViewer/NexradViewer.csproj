@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Authors>TheClearWeather Team</Authors>
+    <Company>TheClearWeather</Company>
+    <Product>NextGenRadar</Product>
+    <Description>Advanced NEXRAD Weather Radar Viewer</Description>
+    <Copyright>Copyright © 2025</Copyright>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Data\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MapData\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Update="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Avalonia UI Framework -->
+    <PackageReference Include="Avalonia" Version="11.0.5" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.5" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.5" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.5" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.5" />
+    <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.5" />
+    <PackageReference Include="Avalonia.Controls.ColorPicker" Version="11.0.5" />
+    <PackageReference Include="ReactiveUI" Version="19.5.1" />
+    
+    <!-- Mapping Libraries -->
+    <PackageReference Include="Mapsui" Version="4.0.0" />
+    <PackageReference Include="Mapsui.Nts" Version="4.0.0" />
+    <PackageReference Include="Mapsui.Rendering.Skia" Version="4.0.0" />
+    <PackageReference Include="Mapsui.Avalonia" Version="4.0.0" />
+    <PackageReference Include="BruTile" Version="5.0.6" />
+    <PackageReference Include="BruTile.MbTiles" Version="5.0.0" />
+    <PackageReference Include="NetTopologySuite" Version="2.5.0" />
+    <PackageReference Include="NetTopologySuite.Features" Version="2.2.0" />
+    
+    <!-- AWS SDK for S3 Access -->
+    <PackageReference Include="AWSSDK.Core" Version="3.7.300.21" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.304.10" />
+    
+    <!-- Utilities -->
+    <PackageReference Include="System.Text.Json" Version="7.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SharpCompress" Version="0.34.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ensure these directories exist -->
+    <Folder Include="Logs\" />
+    <Folder Include="MapData\" />
+  </ItemGroup>
+
+  <!-- Exclude Windows Forms files as we're using Avalonia -->
+  <ItemGroup>
+    <Compile Remove="MainForm.cs" />
+    <Compile Remove="MainForm.Designer.cs" />
+    <None Include="MainForm.cs" />
+    <None Include="MainForm.Designer.cs" />
+  </ItemGroup>
+
+</Project>

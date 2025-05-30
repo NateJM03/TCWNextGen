@@ -1,0 +1,948 @@
+[2025-05-28 19:58:19] Logger initialized
+[2025-05-28 19:58:19] Application starting
+[2025-05-28 19:58:19] === Application Paths ===
+[2025-05-28 19:58:19] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 19:58:19] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 19:58:19] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 19:58:19] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 19:58:19] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 19:58:19] ========================
+[2025-05-28 19:58:19] XAML loaded successfully
+[2025-05-28 19:58:19] Creating main window
+[2025-05-28 19:58:21] Logger initialized
+[2025-05-28 19:58:21] INFO: === APPLICATION STARTUP ===
+[2025-05-28 19:58:21] INFO: MainWindow constructor started
+[2025-05-28 19:58:21] INFO: Initializing ConfigurationService
+[2025-05-28 19:58:21] INFO: Initializing NexradService
+[2025-05-28 19:58:21] INFO: Initializing NexradService
+[2025-05-28 19:58:21] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 19:58:21] INFO: Loading stations from: Data\stations.json
+[2025-05-28 19:58:21] INFO: File exists: False
+[2025-05-28 19:58:21] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 19:58:21] INFO: NexradService initialization completed
+[2025-05-28 19:58:21] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 19:58:21] INFO: Refresh timer initialized and started
+[2025-05-28 19:58:21] INFO: MainWindow constructor completed successfully
+[2025-05-28 19:58:21] Application startup completed in 2025.21ms
+[2025-05-28 19:58:22] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 19:58:22] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 19:58:22] INFO: MapControl available, map object: Available
+[2025-05-28 19:58:22] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 19:58:22] INFO: === GetLatestScanAsync START ===
+[2025-05-28 19:58:22] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 19:58:22] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 19:58:22] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 19:58:22] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 19:58:23] INFO: Level 2 decoder result: NULL
+[2025-05-28 19:58:23] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 19:58:23] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 19:58:23] INFO: RadarDataProcessor result: 1568 gates
+[2025-05-28 19:58:23] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 19:58:23] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1568, Mode=
+[2025-05-28 19:58:23] INFO: Sample gate data: Lat=32.66303216059187, Lon=-97.3031, Value=30.038044718954673
+[2025-05-28 19:58:23] INFO: Calling AddRadarLayer...
+[2025-05-28 19:58:23] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 19:58:23] INFO: Radar data loaded successfully: 1568 gates
+[2025-05-28 19:58:23] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 19:58:24] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 19:58:24] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 19:58:24] INFO: MapControl available, map object: Available
+[2025-05-28 19:58:24] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 19:58:24] INFO: === GetLatestScanAsync START ===
+[2025-05-28 19:58:24] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 19:58:24] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 19:58:24] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 19:58:24] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 19:58:24] INFO: Level 2 decoder result: NULL
+[2025-05-28 19:58:24] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 19:58:24] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 19:58:24] INFO: RadarDataProcessor result: 1563 gates
+[2025-05-28 19:58:24] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 19:58:24] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1563, Mode=
+[2025-05-28 19:58:24] INFO: Sample gate data: Lat=32.66303216059187, Lon=-97.3031, Value=52.933484179392956
+[2025-05-28 19:58:24] INFO: Calling AddRadarLayer...
+[2025-05-28 19:58:24] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 19:58:24] INFO: Radar data loaded successfully: 1563 gates
+[2025-05-28 19:58:24] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 19:59:53] Application exiting with code 0
+[2025-05-28 20:05:15] Logger initialized
+[2025-05-28 20:05:15] Application starting
+[2025-05-28 20:05:15] === Application Paths ===
+[2025-05-28 20:05:15] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:05:15] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:05:15] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:05:15] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:05:15] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:05:15] ========================
+[2025-05-28 20:05:15] XAML loaded successfully
+[2025-05-28 20:05:15] Creating main window
+[2025-05-28 20:05:15] Logger initialized
+[2025-05-28 20:05:15] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:05:15] INFO: MainWindow constructor started
+[2025-05-28 20:05:15] INFO: Initializing ConfigurationService
+[2025-05-28 20:05:15] INFO: Initializing NexradService
+[2025-05-28 20:05:15] INFO: Initializing NexradService
+[2025-05-28 20:05:15] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:05:15] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:05:15] INFO: File exists: False
+[2025-05-28 20:05:15] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:05:15] INFO: NexradService initialization completed
+[2025-05-28 20:05:15] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:05:15] INFO: Refresh timer initialized and started
+[2025-05-28 20:05:15] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:05:15] Application startup completed in 324.2102ms
+[2025-05-28 20:05:15] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:05:15] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:05:15] INFO: MapControl available, map object: Available
+[2025-05-28 20:05:15] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:05:15] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:05:15] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:05:15] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:05:15] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:05:15] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:05:17] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:05:17] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:05:17] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:05:17] INFO: RadarDataProcessor result: 1528 gates
+[2025-05-28 20:05:17] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:05:17] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1528, Mode=
+[2025-05-28 20:05:17] INFO: Sample gate data: Lat=32.707998240887804, Lon=-97.3031, Value=-8.511455502032277
+[2025-05-28 20:05:17] INFO: Calling AddRadarLayer...
+[2025-05-28 20:05:17] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:05:17] INFO: Radar data loaded successfully: 1528 gates
+[2025-05-28 20:05:17] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:05:17] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:05:17] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:05:17] INFO: MapControl available, map object: Available
+[2025-05-28 20:05:17] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:05:17] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:05:17] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:05:17] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:05:17] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:05:17] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:05:18] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:05:18] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:05:18] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:05:18] INFO: RadarDataProcessor result: 1519 gates
+[2025-05-28 20:05:18] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:05:18] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1519, Mode=
+[2025-05-28 20:05:18] INFO: Sample gate data: Lat=32.66303216059187, Lon=-97.3031, Value=40.274357742610704
+[2025-05-28 20:05:18] INFO: Calling AddRadarLayer...
+[2025-05-28 20:05:18] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:05:18] INFO: Radar data loaded successfully: 1519 gates
+[2025-05-28 20:05:18] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:06:41] Application exiting with code 0
+[2025-05-28 20:10:24] Logger initialized
+[2025-05-28 20:10:24] Application starting
+[2025-05-28 20:10:24] === Application Paths ===
+[2025-05-28 20:10:24] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:10:24] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:10:24] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:10:24] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:10:24] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:10:24] ========================
+[2025-05-28 20:10:24] XAML loaded successfully
+[2025-05-28 20:10:24] Creating main window
+[2025-05-28 20:10:24] Logger initialized
+[2025-05-28 20:10:24] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:10:24] INFO: MainWindow constructor started
+[2025-05-28 20:10:24] INFO: Initializing ConfigurationService
+[2025-05-28 20:10:24] INFO: Initializing NexradService
+[2025-05-28 20:10:24] INFO: Initializing NexradService
+[2025-05-28 20:10:25] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:10:25] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:10:25] INFO: File exists: False
+[2025-05-28 20:10:25] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:10:25] INFO: NexradService initialization completed
+[2025-05-28 20:10:25] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:10:25] INFO: Refresh timer initialized and started
+[2025-05-28 20:10:25] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:10:25] Application startup completed in 369.0458ms
+[2025-05-28 20:10:25] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:10:25] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:10:25] INFO: MapControl available, map object: Available
+[2025-05-28 20:10:25] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:10:25] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:10:25] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:10:25] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:10:25] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:10:25] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:10:26] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:10:26] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:10:26] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:10:26] INFO: RadarDataProcessor result: 1468 gates
+[2025-05-28 20:10:26] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:10:26] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1468, Mode=
+[2025-05-28 20:10:26] INFO: Sample gate data: Lat=32.75296432118373, Lon=-97.3031, Value=21.686581138170354
+[2025-05-28 20:10:26] INFO: Calling AddRadarLayer...
+[2025-05-28 20:10:26] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:10:26] INFO: Radar data loaded successfully: 1468 gates
+[2025-05-28 20:10:26] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:10:26] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:10:26] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:10:26] INFO: MapControl available, map object: Available
+[2025-05-28 20:10:26] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:10:26] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:10:26] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:10:26] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:10:26] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:10:26] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:10:27] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:10:27] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:10:27] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:10:27] INFO: RadarDataProcessor result: 1497 gates
+[2025-05-28 20:10:27] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:10:27] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1497, Mode=
+[2025-05-28 20:10:27] INFO: Sample gate data: Lat=32.797930401479675, Lon=-97.3031, Value=31.814728023331675
+[2025-05-28 20:10:27] INFO: Calling AddRadarLayer...
+[2025-05-28 20:10:27] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:10:27] INFO: Radar data loaded successfully: 1497 gates
+[2025-05-28 20:10:27] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:12:04] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:12:04] INFO: Station: KOHX, Product: BaseReflectivity
+[2025-05-28 20:12:04] INFO: MapControl available, map object: Available
+[2025-05-28 20:12:04] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:12:04] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:12:04] INFO: Requested: StationId=KOHX, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:12:04] INFO: Station found: Nashville at 36.2472, -86.5625
+[2025-05-28 20:12:04] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:12:04] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:12:05] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:12:05] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:12:05] INFO: Attempting RadarDataProcessor for KOHX, BaseReflectivity
+[2025-05-28 20:12:05] INFO: RadarDataProcessor result: 1573 gates
+[2025-05-28 20:12:05] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:12:05] INFO: Scan returned: StationId=KOHX, ProductType=BaseReflectivity, Gates=1573, Mode=
+[2025-05-28 20:12:05] INFO: Sample gate data: Lat=36.38209824088781, Lon=-86.5625, Value=63.26740141480323
+[2025-05-28 20:12:05] INFO: Calling AddRadarLayer...
+[2025-05-28 20:12:05] INFO: Adding station marker: Nashville at 36.2472, -86.5625
+[2025-05-28 20:12:05] INFO: Radar data loaded successfully: 1573 gates
+[2025-05-28 20:12:05] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:12:10] Application exiting with code 0
+[2025-05-28 20:14:38] Logger initialized
+[2025-05-28 20:14:38] Application starting
+[2025-05-28 20:14:38] === Application Paths ===
+[2025-05-28 20:14:38] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:14:38] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:14:38] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:14:38] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:14:38] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:14:38] ========================
+[2025-05-28 20:14:38] XAML loaded successfully
+[2025-05-28 20:14:38] Creating main window
+[2025-05-28 20:14:39] Logger initialized
+[2025-05-28 20:14:39] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:14:39] INFO: MainWindow constructor started
+[2025-05-28 20:14:39] INFO: Initializing ConfigurationService
+[2025-05-28 20:14:39] INFO: Initializing NexradService
+[2025-05-28 20:14:39] INFO: Initializing NexradService
+[2025-05-28 20:14:39] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:14:39] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:14:39] INFO: File exists: False
+[2025-05-28 20:14:39] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:14:39] INFO: NexradService initialization completed
+[2025-05-28 20:14:39] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:14:39] INFO: Refresh timer initialized and started
+[2025-05-28 20:14:39] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:14:39] Application startup completed in 333.1026ms
+[2025-05-28 20:14:39] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:14:39] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:14:39] INFO: MapControl available, map object: Available
+[2025-05-28 20:14:39] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:14:39] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:14:39] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:14:39] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:14:39] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:14:39] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:14:41] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:14:41] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:14:41] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:14:41] INFO: RadarDataProcessor result: 1502 gates
+[2025-05-28 20:14:41] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:14:41] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1502, Mode=
+[2025-05-28 20:14:41] INFO: Sample gate data: Lat=32.75296432118373, Lon=-97.3031, Value=23.554518982318967
+[2025-05-28 20:14:41] INFO: Calling AddRadarLayer...
+[2025-05-28 20:14:41] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:14:41] INFO: Radar data loaded successfully: 1502 gates
+[2025-05-28 20:14:41] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:14:41] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:14:41] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:14:41] INFO: MapControl available, map object: Available
+[2025-05-28 20:14:41] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:14:41] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:14:41] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:14:41] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:14:41] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:14:41] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:14:41] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:14:41] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:14:41] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:14:41] INFO: RadarDataProcessor result: 1491 gates
+[2025-05-28 20:14:41] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:14:41] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1491, Mode=
+[2025-05-28 20:14:41] INFO: Sample gate data: Lat=32.797930401479675, Lon=-97.3031, Value=9.588349803103348
+[2025-05-28 20:14:41] INFO: Calling AddRadarLayer...
+[2025-05-28 20:14:41] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:14:41] INFO: Radar data loaded successfully: 1491 gates
+[2025-05-28 20:14:41] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:15:38] Application exiting with code 0
+[2025-05-28 20:18:28] Logger initialized
+[2025-05-28 20:18:29] Application starting
+[2025-05-28 20:18:29] === Application Paths ===
+[2025-05-28 20:18:29] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:18:29] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:18:29] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:18:29] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:18:29] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:18:29] ========================
+[2025-05-28 20:18:29] XAML loaded successfully
+[2025-05-28 20:18:29] Creating main window
+[2025-05-28 20:18:29] Logger initialized
+[2025-05-28 20:18:29] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:18:29] INFO: MainWindow constructor started
+[2025-05-28 20:18:29] INFO: Initializing ConfigurationService
+[2025-05-28 20:18:29] INFO: Initializing NexradService
+[2025-05-28 20:18:29] INFO: Initializing NexradService
+[2025-05-28 20:18:29] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:18:29] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:18:29] INFO: File exists: False
+[2025-05-28 20:18:29] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:18:29] INFO: NexradService initialization completed
+[2025-05-28 20:18:29] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:18:29] INFO: Refresh timer initialized and started
+[2025-05-28 20:18:29] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:18:29] Application startup completed in 329.8845ms
+[2025-05-28 20:18:29] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:18:29] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:18:29] INFO: MapControl available, map object: Available
+[2025-05-28 20:18:29] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:18:29] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:18:29] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:18:29] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:18:29] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:18:29] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:18:31] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:18:31] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:18:31] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:18:31] INFO: RadarDataProcessor result: 1488 gates
+[2025-05-28 20:18:31] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:18:31] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1488, Mode=
+[2025-05-28 20:18:31] INFO: Sample gate data: Lat=32.707998240887804, Lon=-97.3031, Value=63.495343246221495
+[2025-05-28 20:18:31] INFO: Calling AddRadarLayer...
+[2025-05-28 20:18:31] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:18:31] INFO: Radar data loaded successfully: 1488 gates
+[2025-05-28 20:18:31] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:18:31] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:18:31] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:18:31] INFO: MapControl available, map object: Available
+[2025-05-28 20:18:31] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:18:31] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:18:31] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:18:31] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:18:31] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:18:31] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:18:32] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:18:32] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:18:32] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:18:32] INFO: RadarDataProcessor result: 1535 gates
+[2025-05-28 20:18:32] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:18:32] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1535, Mode=
+[2025-05-28 20:18:32] INFO: Sample gate data: Lat=32.66303216059187, Lon=-97.3031, Value=38.96633840796191
+[2025-05-28 20:18:32] INFO: Calling AddRadarLayer...
+[2025-05-28 20:18:32] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:18:32] INFO: Radar data loaded successfully: 1535 gates
+[2025-05-28 20:18:32] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:19:35] Application exiting with code 0
+[2025-05-28 20:22:36] Logger initialized
+[2025-05-28 20:22:36] Application starting
+[2025-05-28 20:22:36] === Application Paths ===
+[2025-05-28 20:22:36] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:22:36] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:22:36] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:22:36] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:22:36] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:22:36] ========================
+[2025-05-28 20:22:36] XAML loaded successfully
+[2025-05-28 20:22:36] Creating main window
+[2025-05-28 20:22:36] Logger initialized
+[2025-05-28 20:22:36] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:22:36] INFO: MainWindow constructor started
+[2025-05-28 20:22:36] INFO: Initializing ConfigurationService
+[2025-05-28 20:22:36] INFO: Initializing NexradService
+[2025-05-28 20:22:36] INFO: Initializing NexradService
+[2025-05-28 20:22:36] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:22:36] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:22:36] INFO: File exists: False
+[2025-05-28 20:22:36] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:22:36] INFO: NexradService initialization completed
+[2025-05-28 20:22:36] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:22:36] INFO: Refresh timer initialized and started
+[2025-05-28 20:22:36] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:22:36] Application startup completed in 364.5616ms
+[2025-05-28 20:22:37] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:22:37] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:22:37] INFO: MapControl available, map object: Available
+[2025-05-28 20:22:37] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:22:37] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:22:37] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:22:37] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:22:37] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:22:37] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:22:38] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:22:38] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:22:38] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:22:38] INFO: RadarDataProcessor result: 1512 gates
+[2025-05-28 20:22:38] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:22:38] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1512, Mode=
+[2025-05-28 20:22:38] INFO: Sample gate data: Lat=32.75296432118373, Lon=-97.3031, Value=-8.614096009477112
+[2025-05-28 20:22:38] INFO: Calling AddRadarLayer...
+[2025-05-28 20:22:38] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:22:38] INFO: Radar data loaded successfully: 1512 gates
+[2025-05-28 20:22:38] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:22:38] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:22:38] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:22:38] INFO: MapControl available, map object: Available
+[2025-05-28 20:22:38] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:22:38] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:22:38] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:22:38] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:22:38] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:22:38] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:22:39] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:22:39] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:22:39] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:22:39] INFO: RadarDataProcessor result: 1532 gates
+[2025-05-28 20:22:39] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:22:39] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1532, Mode=
+[2025-05-28 20:22:39] INFO: Sample gate data: Lat=32.66303216059187, Lon=-97.3031, Value=13.803575576912941
+[2025-05-28 20:22:39] INFO: Calling AddRadarLayer...
+[2025-05-28 20:22:39] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:22:39] INFO: Radar data loaded successfully: 1532 gates
+[2025-05-28 20:22:39] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:32:11] Application exiting with code 0
+[2025-05-28 20:32:19] Logger initialized
+[2025-05-28 20:32:19] Application starting
+[2025-05-28 20:32:19] === Application Paths ===
+[2025-05-28 20:32:19] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:32:19] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:32:19] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:32:19] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:32:19] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:32:19] ========================
+[2025-05-28 20:32:19] XAML loaded successfully
+[2025-05-28 20:32:19] Creating main window
+[2025-05-28 20:32:20] Logger initialized
+[2025-05-28 20:32:20] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:32:20] INFO: MainWindow constructor started
+[2025-05-28 20:32:20] INFO: Initializing ConfigurationService
+[2025-05-28 20:32:20] INFO: Initializing NexradService
+[2025-05-28 20:32:20] INFO: Initializing NexradService
+[2025-05-28 20:32:20] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:32:20] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:32:20] INFO: File exists: False
+[2025-05-28 20:32:20] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:32:20] INFO: NexradService initialization completed
+[2025-05-28 20:32:20] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:32:20] INFO: Refresh timer initialized and started
+[2025-05-28 20:32:20] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:32:20] Application startup completed in 327.2163ms
+[2025-05-28 20:32:20] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:32:20] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:32:20] INFO: MapControl available, map object: Available
+[2025-05-28 20:32:20] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:32:20] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:32:20] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:32:20] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:32:20] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:32:20] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:32:20] INFO: Getting latest Level 2 chunks for KFWS
+[2025-05-28 20:32:20] INFO: Listing objects with prefix: KFWS/
+[2025-05-28 20:32:22] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 69
+[2025-05-28 20:32:22] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:32:22] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:32:22] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:32:22] INFO: RadarDataProcessor result: 1454 gates
+[2025-05-28 20:32:22] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:32:22] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1454, Mode=
+[2025-05-28 20:32:22] INFO: Sample gate data: Lat=32.66303216059187, Lon=-97.3031, Value=43.284211887538
+[2025-05-28 20:32:22] INFO: Calling AddRadarLayer...
+[2025-05-28 20:32:22] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:32:22] INFO: Radar data loaded successfully: 1454 gates
+[2025-05-28 20:32:22] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:32:22] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:32:22] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:32:22] INFO: MapControl available, map object: Available
+[2025-05-28 20:32:22] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:32:22] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:32:22] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:32:22] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:32:22] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:32:22] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:32:22] INFO: Getting latest Level 2 chunks for KFWS
+[2025-05-28 20:32:22] INFO: Listing objects with prefix: KFWS/
+[2025-05-28 20:32:22] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 69
+[2025-05-28 20:32:22] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:32:22] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:32:22] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:32:22] INFO: RadarDataProcessor result: 1514 gates
+[2025-05-28 20:32:22] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:32:22] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1514, Mode=
+[2025-05-28 20:32:22] INFO: Sample gate data: Lat=32.707998240887804, Lon=-97.3031, Value=26.112635196128323
+[2025-05-28 20:32:22] INFO: Calling AddRadarLayer...
+[2025-05-28 20:32:22] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:32:22] INFO: Radar data loaded successfully: 1514 gates
+[2025-05-28 20:32:22] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:36:05] Application exiting with code 0
+[2025-05-28 20:41:09] Logger initialized
+[2025-05-28 20:41:09] Application starting
+[2025-05-28 20:41:09] === Application Paths ===
+[2025-05-28 20:41:09] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:41:09] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:41:09] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:41:09] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:41:09] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:41:09] ========================
+[2025-05-28 20:41:09] XAML loaded successfully
+[2025-05-28 20:41:09] Creating main window
+[2025-05-28 20:41:09] Logger initialized
+[2025-05-28 20:41:09] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:41:09] INFO: MainWindow constructor started
+[2025-05-28 20:41:09] INFO: Initializing ConfigurationService
+[2025-05-28 20:41:09] INFO: Initializing NexradService
+[2025-05-28 20:41:09] INFO: Initializing NexradService
+[2025-05-28 20:41:09] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:41:09] INFO: AwsNexradClient initialized for region us-east-1
+[2025-05-28 20:41:09] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:41:09] INFO: File exists: False
+[2025-05-28 20:41:09] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:41:09] INFO: NexradService initialization completed
+[2025-05-28 20:41:09] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:41:09] INFO: Refresh timer initialized and started
+[2025-05-28 20:41:09] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:41:09] Application startup completed in 372.5966ms
+[2025-05-28 20:41:10] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:41:10] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:41:10] INFO: MapControl available, map object: Available
+[2025-05-28 20:41:10] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:41:10] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:41:10] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:41:10] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:41:10] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:41:10] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:41:10] INFO: === DETAILED S3 REQUEST DEBUG ===
+[2025-05-28 20:41:10] INFO: Station ID: KFWS
+[2025-05-28 20:41:10] INFO: Bucket: unidata-nexrad-level2-chunks
+[2025-05-28 20:41:10] INFO: Current UTC Time: 2025-05-29 01:41:10
+[2025-05-28 20:41:10] INFO: Station Prefix: 'KFWS/'
+[2025-05-28 20:41:10] INFO: S3 Request Details:
+[2025-05-28 20:41:10] INFO:   BucketName: unidata-nexrad-level2-chunks
+[2025-05-28 20:41:10] INFO:   Prefix: 'KFWS/'
+[2025-05-28 20:41:10] INFO:   MaxKeys: 200
+[2025-05-28 20:41:10] INFO: Making S3 ListObjectsV2 request...
+[2025-05-28 20:41:11] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 79
+[2025-05-28 20:41:11] ERROR: Exception details:
+[2025-05-28 20:41:11] ERROR:   Message: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+[2025-05-28 20:41:11] ERROR:   Type: AmazonServiceException
+[2025-05-28 20:41:11] ERROR:   Source: AWSSDK.Core
+[2025-05-28 20:41:11] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:41:11] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:41:11] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:41:11] INFO: RadarDataProcessor result: 1499 gates
+[2025-05-28 20:41:11] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:41:11] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1499, Mode=
+[2025-05-28 20:41:11] INFO: Sample gate data: Lat=33.24759120443905, Lon=-97.3031, Value=38.84394578486205
+[2025-05-28 20:41:11] INFO: Calling AddRadarLayer...
+[2025-05-28 20:41:11] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:41:11] INFO: Radar data loaded successfully: 1499 gates
+[2025-05-28 20:41:11] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:41:11] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:41:11] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:41:11] INFO: MapControl available, map object: Available
+[2025-05-28 20:41:11] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:41:11] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:41:11] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:41:11] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:41:11] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:41:11] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:41:11] INFO: === DETAILED S3 REQUEST DEBUG ===
+[2025-05-28 20:41:11] INFO: Station ID: KFWS
+[2025-05-28 20:41:11] INFO: Bucket: unidata-nexrad-level2-chunks
+[2025-05-28 20:41:11] INFO: Current UTC Time: 2025-05-29 01:41:11
+[2025-05-28 20:41:11] INFO: Station Prefix: 'KFWS/'
+[2025-05-28 20:41:11] INFO: S3 Request Details:
+[2025-05-28 20:41:11] INFO:   BucketName: unidata-nexrad-level2-chunks
+[2025-05-28 20:41:11] INFO:   Prefix: 'KFWS/'
+[2025-05-28 20:41:11] INFO:   MaxKeys: 200
+[2025-05-28 20:41:11] INFO: Making S3 ListObjectsV2 request...
+[2025-05-28 20:41:12] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 79
+[2025-05-28 20:41:12] ERROR: Exception details:
+[2025-05-28 20:41:12] ERROR:   Message: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+[2025-05-28 20:41:12] ERROR:   Type: AmazonServiceException
+[2025-05-28 20:41:12] ERROR:   Source: AWSSDK.Core
+[2025-05-28 20:41:12] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:41:12] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:41:12] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:41:12] INFO: RadarDataProcessor result: 1514 gates
+[2025-05-28 20:41:12] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:41:12] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1514, Mode=
+[2025-05-28 20:41:12] INFO: Sample gate data: Lat=32.707998240887804, Lon=-97.3031, Value=31.273804717951855
+[2025-05-28 20:41:12] INFO: Calling AddRadarLayer...
+[2025-05-28 20:41:12] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:41:12] INFO: Radar data loaded successfully: 1514 gates
+[2025-05-28 20:41:12] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:43:03] Application exiting with code 0
+[2025-05-28 20:52:00] Logger initialized
+[2025-05-28 20:52:00] Application starting
+[2025-05-28 20:52:00] === Application Paths ===
+[2025-05-28 20:52:00] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:52:00] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:52:00] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:52:00] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:52:00] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:52:00] ========================
+[2025-05-28 20:52:00] XAML loaded successfully
+[2025-05-28 20:52:00] Creating main window
+[2025-05-28 20:52:01] Logger initialized
+[2025-05-28 20:52:01] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:52:01] INFO: MainWindow constructor started
+[2025-05-28 20:52:01] INFO: Initializing ConfigurationService
+[2025-05-28 20:52:01] INFO: Initializing NexradService
+[2025-05-28 20:52:01] INFO: Initializing NexradService
+[2025-05-28 20:52:01] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:52:01] INFO: AwsNexradClient initialized for region us-east-1
+[2025-05-28 20:52:01] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:52:01] INFO: File exists: False
+[2025-05-28 20:52:01] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:52:01] INFO: NexradService initialization completed
+[2025-05-28 20:52:01] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:52:01] INFO: Refresh timer initialized and started
+[2025-05-28 20:52:01] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:52:01] Application startup completed in 1418.9152ms
+[2025-05-28 20:52:01] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:52:01] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:52:01] INFO: MapControl available, map object: Available
+[2025-05-28 20:52:01] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:52:01] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:52:01] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:52:01] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:52:01] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:52:01] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:52:01] INFO: === DETAILED S3 REQUEST DEBUG ===
+[2025-05-28 20:52:01] INFO: Station ID: KFWS
+[2025-05-28 20:52:01] INFO: Bucket: unidata-nexrad-level2-chunks
+[2025-05-28 20:52:01] INFO: Current UTC Time: 2025-05-29 01:52:01
+[2025-05-28 20:52:01] INFO: Station Prefix: 'KFWS/'
+[2025-05-28 20:52:01] INFO: S3 Request Details:
+[2025-05-28 20:52:01] INFO:   BucketName: unidata-nexrad-level2-chunks
+[2025-05-28 20:52:01] INFO:   Prefix: 'KFWS/'
+[2025-05-28 20:52:01] INFO:   MaxKeys: 200
+[2025-05-28 20:52:01] INFO: Making S3 ListObjectsV2 request...
+[2025-05-28 20:52:03] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 79
+[2025-05-28 20:52:03] ERROR: Exception details:
+[2025-05-28 20:52:03] ERROR:   Message: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+[2025-05-28 20:52:03] ERROR:   Type: AmazonServiceException
+[2025-05-28 20:52:03] ERROR:   Source: AWSSDK.Core
+[2025-05-28 20:52:03] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:52:03] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:52:03] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:52:03] INFO: RadarDataProcessor result: 1504 gates
+[2025-05-28 20:52:03] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:52:03] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1504, Mode=
+[2025-05-28 20:52:03] INFO: Sample gate data: Lat=32.66303216059187, Lon=-97.3031, Value=16.4284933886874
+[2025-05-28 20:52:03] INFO: Calling AddRadarLayer...
+[2025-05-28 20:52:03] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:52:03] INFO: Radar data loaded successfully: 1504 gates
+[2025-05-28 20:52:03] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:52:03] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:52:03] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:52:03] INFO: MapControl available, map object: Available
+[2025-05-28 20:52:03] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:52:03] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:52:03] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:52:03] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:52:03] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:52:03] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:52:03] INFO: === DETAILED S3 REQUEST DEBUG ===
+[2025-05-28 20:52:03] INFO: Station ID: KFWS
+[2025-05-28 20:52:03] INFO: Bucket: unidata-nexrad-level2-chunks
+[2025-05-28 20:52:03] INFO: Current UTC Time: 2025-05-29 01:52:03
+[2025-05-28 20:52:03] INFO: Station Prefix: 'KFWS/'
+[2025-05-28 20:52:03] INFO: S3 Request Details:
+[2025-05-28 20:52:03] INFO:   BucketName: unidata-nexrad-level2-chunks
+[2025-05-28 20:52:03] INFO:   Prefix: 'KFWS/'
+[2025-05-28 20:52:03] INFO:   MaxKeys: 200
+[2025-05-28 20:52:03] INFO: Making S3 ListObjectsV2 request...
+[2025-05-28 20:52:04] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 79
+[2025-05-28 20:52:04] ERROR: Exception details:
+[2025-05-28 20:52:04] ERROR:   Message: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+[2025-05-28 20:52:04] ERROR:   Type: AmazonServiceException
+[2025-05-28 20:52:04] ERROR:   Source: AWSSDK.Core
+[2025-05-28 20:52:04] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:52:04] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:52:04] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:52:04] INFO: RadarDataProcessor result: 1569 gates
+[2025-05-28 20:52:04] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:52:04] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1569, Mode=
+[2025-05-28 20:52:04] INFO: Sample gate data: Lat=32.797930401479675, Lon=-97.3031, Value=22.88308909724683
+[2025-05-28 20:52:04] INFO: Calling AddRadarLayer...
+[2025-05-28 20:52:04] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:52:04] INFO: Radar data loaded successfully: 1569 gates
+[2025-05-28 20:52:04] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:54:44] Application exiting with code 0
+[2025-05-28 20:58:32] Logger initialized
+[2025-05-28 20:58:32] Application starting
+[2025-05-28 20:58:32] === Application Paths ===
+[2025-05-28 20:58:32] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 20:58:32] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen
+[2025-05-28 20:58:32] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 20:58:32] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 20:58:32] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 20:58:32] ========================
+[2025-05-28 20:58:32] XAML loaded successfully
+[2025-05-28 20:58:32] Creating main window
+[2025-05-28 20:58:32] Logger initialized
+[2025-05-28 20:58:32] INFO: === APPLICATION STARTUP ===
+[2025-05-28 20:58:32] INFO: MainWindow constructor started
+[2025-05-28 20:58:32] INFO: Initializing ConfigurationService
+[2025-05-28 20:58:32] INFO: Initializing NexradService
+[2025-05-28 20:58:32] INFO: Initializing NexradService
+[2025-05-28 20:58:32] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 20:58:32] INFO: AwsNexradClient initialized for region us-east-1
+[2025-05-28 20:58:32] INFO: Level2Decoder initialized
+[2025-05-28 20:58:32] INFO: Loading stations from: Data\stations.json
+[2025-05-28 20:58:32] INFO: File exists: False
+[2025-05-28 20:58:32] WARNING: Stations file not found at Data\stations.json, using hardcoded stations
+[2025-05-28 20:58:32] INFO: NexradService initialization completed
+[2025-05-28 20:58:32] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 20:58:32] INFO: Refresh timer initialized and started
+[2025-05-28 20:58:32] INFO: MainWindow constructor completed successfully
+[2025-05-28 20:58:32] Application startup completed in 424.1838ms
+[2025-05-28 20:58:32] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:58:32] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:58:32] INFO: MapControl available, map object: Available
+[2025-05-28 20:58:32] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:58:32] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:58:32] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:58:32] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:58:32] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:58:32] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:58:32] INFO: === LEVEL2DECODER START ===
+[2025-05-28 20:58:32] INFO: DecodeLatestScan called: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:58:32] INFO: About to call _awsClient.GetLatestLevel2ChunksAsync(KFWS)
+[2025-05-28 20:58:32] INFO: === DETAILED S3 REQUEST DEBUG ===
+[2025-05-28 20:58:32] INFO: Station ID: KFWS
+[2025-05-28 20:58:32] INFO: Bucket: unidata-nexrad-level2-chunks
+[2025-05-28 20:58:32] INFO: Current UTC Time: 2025-05-29 01:58:32
+[2025-05-28 20:58:32] INFO: Station Prefix: 'KFWS/'
+[2025-05-28 20:58:32] INFO: S3 Request Details:
+[2025-05-28 20:58:32] INFO:   BucketName: unidata-nexrad-level2-chunks
+[2025-05-28 20:58:32] INFO:   Prefix: 'KFWS/'
+[2025-05-28 20:58:32] INFO:   MaxKeys: 200
+[2025-05-28 20:58:32] INFO: Making S3 ListObjectsV2 request...
+[2025-05-28 20:58:34] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 79
+[2025-05-28 20:58:34] ERROR: Exception details:
+[2025-05-28 20:58:34] ERROR:   Message: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+[2025-05-28 20:58:34] ERROR:   Type: AmazonServiceException
+[2025-05-28 20:58:34] ERROR:   Source: AWSSDK.Core
+[2025-05-28 20:58:34] INFO: GetLatestLevel2ChunksAsync returned: 0 chunks
+[2025-05-28 20:58:34] WARNING: No chunks found for KFWS - this triggers our detailed S3 logging
+[2025-05-28 20:58:34] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:58:34] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:58:34] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:58:34] INFO: RadarDataProcessor result: 1467 gates
+[2025-05-28 20:58:34] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:58:34] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1467, Mode=
+[2025-05-28 20:58:34] INFO: Sample gate data: Lat=32.75296432118373, Lon=-97.3031, Value=-2.346331027831736
+[2025-05-28 20:58:34] INFO: Calling AddRadarLayer...
+[2025-05-28 20:58:34] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:58:34] INFO: Radar data loaded successfully: 1467 gates
+[2025-05-28 20:58:34] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:58:34] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:58:34] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:58:34] INFO: MapControl available, map object: Available
+[2025-05-28 20:58:34] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:58:34] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:58:34] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:58:34] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:58:34] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:58:34] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:58:34] INFO: === LEVEL2DECODER START ===
+[2025-05-28 20:58:34] INFO: DecodeLatestScan called: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:58:34] INFO: About to call _awsClient.GetLatestLevel2ChunksAsync(KFWS)
+[2025-05-28 20:58:34] INFO: === DETAILED S3 REQUEST DEBUG ===
+[2025-05-28 20:58:34] INFO: Station ID: KFWS
+[2025-05-28 20:58:34] INFO: Bucket: unidata-nexrad-level2-chunks
+[2025-05-28 20:58:34] INFO: Current UTC Time: 2025-05-29 01:58:34
+[2025-05-28 20:58:34] INFO: Station Prefix: 'KFWS/'
+[2025-05-28 20:58:34] INFO: S3 Request Details:
+[2025-05-28 20:58:34] INFO:   BucketName: unidata-nexrad-level2-chunks
+[2025-05-28 20:58:34] INFO:   Prefix: 'KFWS/'
+[2025-05-28 20:58:34] INFO:   MaxKeys: 200
+[2025-05-28 20:58:34] INFO: Making S3 ListObjectsV2 request...
+[2025-05-28 20:58:35] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 79
+[2025-05-28 20:58:35] ERROR: Exception details:
+[2025-05-28 20:58:35] ERROR:   Message: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+[2025-05-28 20:58:35] ERROR:   Type: AmazonServiceException
+[2025-05-28 20:58:35] ERROR:   Source: AWSSDK.Core
+[2025-05-28 20:58:35] INFO: GetLatestLevel2ChunksAsync returned: 0 chunks
+[2025-05-28 20:58:35] WARNING: No chunks found for KFWS - this triggers our detailed S3 logging
+[2025-05-28 20:58:35] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:58:35] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:58:35] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:58:35] INFO: RadarDataProcessor result: 1574 gates
+[2025-05-28 20:58:35] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:58:35] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1574, Mode=
+[2025-05-28 20:58:35] INFO: Sample gate data: Lat=32.707998240887804, Lon=-97.3031, Value=8.02477667956677
+[2025-05-28 20:58:35] INFO: Calling AddRadarLayer...
+[2025-05-28 20:58:35] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:58:35] INFO: Radar data loaded successfully: 1574 gates
+[2025-05-28 20:58:35] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:58:56] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 20:58:56] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 20:58:56] INFO: MapControl available, map object: Available
+[2025-05-28 20:58:56] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 20:58:56] INFO: === GetLatestScanAsync START ===
+[2025-05-28 20:58:56] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:58:56] INFO: Station found: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:58:56] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 20:58:56] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 20:58:56] INFO: === LEVEL2DECODER START ===
+[2025-05-28 20:58:56] INFO: DecodeLatestScan called: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 20:58:56] INFO: About to call _awsClient.GetLatestLevel2ChunksAsync(KFWS)
+[2025-05-28 20:58:56] INFO: === DETAILED S3 REQUEST DEBUG ===
+[2025-05-28 20:58:56] INFO: Station ID: KFWS
+[2025-05-28 20:58:56] INFO: Bucket: unidata-nexrad-level2-chunks
+[2025-05-28 20:58:56] INFO: Current UTC Time: 2025-05-29 01:58:56
+[2025-05-28 20:58:56] INFO: Station Prefix: 'KFWS/'
+[2025-05-28 20:58:56] INFO: S3 Request Details:
+[2025-05-28 20:58:56] INFO:   BucketName: unidata-nexrad-level2-chunks
+[2025-05-28 20:58:56] INFO:   Prefix: 'KFWS/'
+[2025-05-28 20:58:56] INFO:   MaxKeys: 200
+[2025-05-28 20:58:56] INFO: Making S3 ListObjectsV2 request...
+[2025-05-28 20:58:57] ERROR [GetLatestLevel2ChunksAsync]: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+Stack Trace:    at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.FetchCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentials()
+   at Amazon.Runtime.DefaultInstanceProfileAWSCredentials.GetCredentialsAsync()
+   at Amazon.Runtime.Internal.CredentialsRetriever.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.RetryHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.CallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.S3.Internal.AmazonS3ExceptionHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.ErrorCallbackHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at Amazon.Runtime.Internal.MetricsHandler.InvokeAsync[T](IExecutionContext executionContext)
+   at NexradViewer.Services.AwsNexradClient.GetLatestLevel2ChunksAsync(String stationId) in C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\Services\AwsNexradClient.cs:line 79
+[2025-05-28 20:58:57] ERROR: Exception details:
+[2025-05-28 20:58:57] ERROR:   Message: Unable to get IAM security credentials from EC2 Instance Metadata Service.
+[2025-05-28 20:58:57] ERROR:   Type: AmazonServiceException
+[2025-05-28 20:58:57] ERROR:   Source: AWSSDK.Core
+[2025-05-28 20:58:57] INFO: GetLatestLevel2ChunksAsync returned: 0 chunks
+[2025-05-28 20:58:57] WARNING: No chunks found for KFWS - this triggers our detailed S3 logging
+[2025-05-28 20:58:57] INFO: Level 2 decoder result: NULL
+[2025-05-28 20:58:57] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 20:58:57] INFO: Attempting RadarDataProcessor for KFWS, BaseReflectivity
+[2025-05-28 20:58:57] INFO: RadarDataProcessor result: 1501 gates
+[2025-05-28 20:58:57] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 20:58:57] INFO: Scan returned: StationId=KFWS, ProductType=BaseReflectivity, Gates=1501, Mode=
+[2025-05-28 20:58:57] INFO: Sample gate data: Lat=32.707998240887804, Lon=-97.3031, Value=33.1114644370015
+[2025-05-28 20:58:57] INFO: Calling AddRadarLayer...
+[2025-05-28 20:58:57] INFO: Adding station marker: Dallas/Fort Worth at 32.5731, -97.3031
+[2025-05-28 20:58:57] INFO: Radar data loaded successfully: 1501 gates
+[2025-05-28 20:58:57] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 20:59:06] Application exiting with code 0

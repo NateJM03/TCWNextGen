@@ -1,0 +1,193 @@
+Core Objectives & Scope
+
+Nationwide Level-2 Display
+– Single-image, full-U.S. composite of Reflectivity, Velocity and Spectrum Width.
+– No limit on number of stations; all live feeds included.
+– Overlapping coverage blended seamlessly by geographic weighting.
+
+Per-Station Level-2 Viewer
+– Detailed, zoomable map per radar site with selectable tilt angles.
+– Side-by-side comparison mode allowing any two Level-2 products for the same station.
+
+Level-3 Product Support (raw data, on-device rendering)
+• Reflectivity: Composite Reflectivity (NCZ), Super-Resolution Base Reflectivity (SR_BREF), Low-Layer Composite (NLL)
+• Velocity: Base Velocity (N0V), Storm-Relative Mean Velocity (N0S), VAD Wind Profile (NVW)
+• Precipitation: One-Hour Accumulation (N1P), Storm-Total Precipitation (NTP), Digital Precipitation Array (DPA)
+• Severe Weather: Enhanced Echo Tops (EET), Mesocyclone Detection (NMD), Tornadic Vortex Signature (NTV)
+• Dual-Polarization: Differential Reflectivity (ZDR), Correlation Coefficient (CC), Specific Differential Phase (KDP)
+
+Advanced Overlays & Alerts
+– Full suite of NWS polygon feeds (HWO, SWS, SWO, etc.), color-coded to NWS standards and toggleable by category (“Watches,” “Warnings,” “Statements”).
+– Real-time wind vector layer, temperature contour map, cloud-cover layer.
+– Optional GOES satellite infrared/visible overlays (user-enabled, with data-size warning).
+
+Offline-Built Map Infrastructure
+– All basemaps (street, satellite, topographic) packaged locally as MBTiles or vector tiles.
+– No online map or script fetch; infinite pan/zoom with local tile caching.
+
+User Control & Performance
+– Nationwide view is user-initiated (not auto-loaded) to avoid slow startup.
+– Opacity sliders for every overlay.
+– Side-by-side station view supports two concurrent data layers (excluding alerts).
+– Custom UI font “Nebula Sans,” baked in.
+– Prominent branding header/footer: “TheClearWeather | NextGenRadar.”
+– GPU-accelerated rendering and optimized tile redraw for smooth panning.
+
+Time-Based Playback (Optional)
+– For station views, cache the most recent N frames and play back at adjustable speed.
+– Nationwide historical playback via NWS pre-generated reflectivity loops only.
+
+Technical Architecture
+
+– UI Layer: Avalonia UI v11.0.5 + ReactiveUI on .NET 8.0, MVVM pattern
+– Mapping: Mapsui + BruTile v5.0.6, NetTopologySuite for spatial operations
+– Data Acquisition: NexradService using AWS SDK to pull live Level-2 and Level-3 bytes per nextgenradar.txt
+– Data Processing: RadarDataProcessor with SharpCompress, System.Text.Json and Newtonsoft.Json to decompress and parse raw radar volumes
+– Rendering Engine: Custom C# polar-to-Cartesian shaders and tile renderers for multi-layer blending
+– Alert Engine: AlertService polling NWS JSON feeds, local cache for toggles
+– Cache & Storage: Local MBTiles for basemaps, in-memory ring buffer for station playback
+– Configuration: JSON settings file for fonts, branding text, default layers, playback length, polling intervals
+
+Data Flow & Pipeline
+
+Startup
+• Load local MBTiles; initialize NexradService (no fetch until user request)
+
+User Selects View
+• Nationwide: fetch all stations’ polar scans → stitch into composite → render
+• Station: fetch that station’s scans → process into grids → render in main pane or side-by-side
+
+Real-Time Updates
+• Poll every configurable interval (default 5 minutes); update only changed tiles/layers
+
+Layer Management
+• Each overlay is its own toggleable, opacity-controlled layer; blending weight user-configurable
+
+Time Playback
+• Station view: play cached frames via timeline controller
+• Nationwide: playback via NWS pre-generated loop
+
+Alert Overlays
+• Fetch JSON on startup and every minute; render polygons/polylines in standard colors
+
+UI/UX Highlights
+
+– Custom dark/light themes using Nebula Sans and brand accent colors
+– Collapsible sidebars for layer controls, station list, timeline slider
+– Persistent header/footer branding
+– In-app searchable help popup detailing every feature, data pipeline diagram, rendering algorithms
+
+Feasibility Notes & Recommendations
+
+– GOES overlays are large; make optional with user warning
+– Full-resolution nationwide playback impractical; rely on NWS pre-generated loops
+– Modern GPUs can handle millions of points; keep tile size ~512 px and use hardware acceleration
+
+Confirmation of Requirements
+
+– Nationwide and per-station Level-2 (Reflectivity, Velocity, Spectrum Width) ✔
+– Top-3 Level-3 products in each category, fetched as raw data ✔
+– Direct S3 fetch per nextgenradar.txt; no fallbacks or external image fetch ✔
+– Unlimited stations, overlap blending ✔
+– Offline basemap and UI assets; no internet scripts ✔
+– Toggleable, color-coded NWS alerts ✔
+– Layer opacity, side-by-side comparison, playback controls ✔
+– Wind, temperature, cloud, and optional GOES overlays ✔
+– Custom font and branding ✔
+– Comprehensive in-app documentation ✔Core Objectives & Scope
+
+Nationwide Level-2 Display
+– Single-image, full-U.S. composite of Reflectivity, Velocity and Spectrum Width.
+– No limit on number of stations; all live feeds included.
+– Overlapping coverage blended seamlessly by geographic weighting.
+
+Per-Station Level-2 Viewer
+– Detailed, zoomable map per radar site with selectable tilt angles.
+– Side-by-side comparison mode allowing any two Level-2 products for the same station.
+
+Level-3 Product Support (raw data, on-device rendering)
+• Reflectivity: Composite Reflectivity (NCZ), Super-Resolution Base Reflectivity (SR_BREF), Low-Layer Composite (NLL)
+• Velocity: Base Velocity (N0V), Storm-Relative Mean Velocity (N0S), VAD Wind Profile (NVW)
+• Precipitation: One-Hour Accumulation (N1P), Storm-Total Precipitation (NTP), Digital Precipitation Array (DPA)
+• Severe Weather: Enhanced Echo Tops (EET), Mesocyclone Detection (NMD), Tornadic Vortex Signature (NTV)
+• Dual-Polarization: Differential Reflectivity (ZDR), Correlation Coefficient (CC), Specific Differential Phase (KDP)
+
+Advanced Overlays & Alerts
+– Full suite of NWS polygon feeds (HWO, SWS, SWO, etc.), color-coded to NWS standards and toggleable by category (“Watches,” “Warnings,” “Statements”).
+– Real-time wind vector layer, temperature contour map, cloud-cover layer.
+– Optional GOES satellite infrared/visible overlays (user-enabled, with data-size warning).
+
+Offline-Built Map Infrastructure
+– All basemaps (street, satellite, topographic) packaged locally as MBTiles or vector tiles.
+– No online map or script fetch; infinite pan/zoom with local tile caching.
+
+User Control & Performance
+– Nationwide view is user-initiated (not auto-loaded) to avoid slow startup.
+– Opacity sliders for every overlay.
+– Side-by-side station view supports two concurrent data layers (excluding alerts).
+– Custom UI font “Nebula Sans,” baked in.
+– Prominent branding header/footer: “TheClearWeather | NextGenRadar.”
+– GPU-accelerated rendering and optimized tile redraw for smooth panning.
+
+Time-Based Playback (Optional)
+– For station views, cache the most recent N frames and play back at adjustable speed.
+– Nationwide historical playback via NWS pre-generated reflectivity loops only.
+
+Technical Architecture
+
+– UI Layer: Avalonia UI v11.0.5 + ReactiveUI on .NET 8.0, MVVM pattern
+– Mapping: Mapsui + BruTile v5.0.6, NetTopologySuite for spatial operations
+– Data Acquisition: NexradService using AWS SDK to pull live Level-2 and Level-3 bytes per nextgenradar.txt
+– Data Processing: RadarDataProcessor with SharpCompress, System.Text.Json and Newtonsoft.Json to decompress and parse raw radar volumes
+– Rendering Engine: Custom C# polar-to-Cartesian shaders and tile renderers for multi-layer blending
+– Alert Engine: AlertService polling NWS JSON feeds, local cache for toggles
+– Cache & Storage: Local MBTiles for basemaps, in-memory ring buffer for station playback
+– Configuration: JSON settings file for fonts, branding text, default layers, playback length, polling intervals
+
+Data Flow & Pipeline
+
+Startup
+• Load local MBTiles; initialize NexradService (no fetch until user request)
+
+User Selects View
+• Nationwide: fetch all stations’ polar scans → stitch into composite → render
+• Station: fetch that station’s scans → process into grids → render in main pane or side-by-side
+
+Real-Time Updates
+• Poll every configurable interval (default 5 minutes); update only changed tiles/layers
+
+Layer Management
+• Each overlay is its own toggleable, opacity-controlled layer; blending weight user-configurable
+
+Time Playback
+• Station view: play cached frames via timeline controller
+• Nationwide: playback via NWS pre-generated loop
+
+Alert Overlays
+• Fetch JSON on startup and every minute; render polygons/polylines in standard colors
+
+UI/UX Highlights
+
+– Custom dark/light themes using Nebula Sans and brand accent colors
+– Collapsible sidebars for layer controls, station list, timeline slider
+– Persistent header/footer branding
+– In-app searchable help popup detailing every feature, data pipeline diagram, rendering algorithms
+
+Feasibility Notes & Recommendations
+
+– GOES overlays are large; make optional with user warning
+– Full-resolution nationwide playback impractical; rely on NWS pre-generated loops
+– Modern GPUs can handle millions of points; keep tile size ~512 px and use hardware acceleration
+
+Confirmation of Requirements
+
+– Nationwide and per-station Level-2 (Reflectivity, Velocity, Spectrum Width) 
+– Top-3 Level-3 products in each category, fetched as raw data 
+– Direct S3 fetch per nextgenradar.txt; no fallbacks or external image fetch 
+– Unlimited stations, overlap blending 
+– Offline basemap and UI assets; no internet scripts 
+– Toggleable, color-coded NWS alerts 
+– Layer opacity, side-by-side comparison, playback controls 
+– Wind, temperature, cloud, and optional GOES overlays 
+– Custom font and branding 
+– Comprehensive in-app documentation 

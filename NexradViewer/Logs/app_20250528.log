@@ -1,0 +1,154 @@
+[2025-05-28 14:07:31] Logger initialized
+[2025-05-28 14:07:32] Application starting
+[2025-05-28 14:07:32] === Application Paths ===
+[2025-05-28 14:07:32] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 14:07:32] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer
+[2025-05-28 14:07:32] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 14:07:32] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 14:07:32] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 14:07:32] ========================
+[2025-05-28 14:07:33] XAML loaded successfully
+[2025-05-28 14:07:33] Creating main window
+[2025-05-28 14:07:34] Map initialized successfully
+[2025-05-28 14:07:34] Map initialized successfully
+[2025-05-28 14:07:34] Application startup completed in 2234.8398ms
+[2025-05-28 14:14:43] Application exiting with code 0
+[2025-05-28 14:23:35] Logger initialized
+[2025-05-28 14:23:35] Application starting
+[2025-05-28 14:23:35] === Application Paths ===
+[2025-05-28 14:23:35] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 14:23:35] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer
+[2025-05-28 14:23:35] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 14:23:35] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 14:23:35] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 14:23:35] ========================
+[2025-05-28 14:23:35] XAML loaded successfully
+[2025-05-28 14:23:35] Creating main window
+[2025-05-28 14:23:35] Map initialized successfully
+[2025-05-28 14:23:35] Map initialized successfully
+[2025-05-28 14:23:35] Logger initialized
+[2025-05-28 14:23:35] INFO: === APPLICATION STARTUP ===
+[2025-05-28 14:23:35] INFO: MainWindow constructor started
+[2025-05-28 14:23:35] INFO: Initializing ConfigurationService
+[2025-05-28 14:23:35] INFO: Initializing NexradService
+[2025-05-28 14:23:35] INFO: Initializing NexradService
+[2025-05-28 14:23:35] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 14:23:35] INFO: NexradService initialization completed
+[2025-05-28 14:23:35] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 14:23:35] INFO: Refresh timer initialized and started
+[2025-05-28 14:23:35] INFO: MainWindow constructor completed successfully
+[2025-05-28 14:23:35] Application startup completed in 542.6827ms
+[2025-05-28 14:23:36] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 14:23:36] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 14:23:36] INFO: MapControl available, map object: Available
+[2025-05-28 14:23:36] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 14:23:36] ERROR: GetLatestScanAsync returned null for station KFWS, product BaseReflectivity
+[2025-05-28 14:23:36] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 14:27:31] Logger initialized
+[2025-05-28 14:27:31] Application starting
+[2025-05-28 14:27:31] === Application Paths ===
+[2025-05-28 14:27:31] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 14:27:31] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer
+[2025-05-28 14:27:31] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 14:27:31] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 14:27:31] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 14:27:31] ========================
+[2025-05-28 14:27:31] XAML loaded successfully
+[2025-05-28 14:27:31] Creating main window
+[2025-05-28 14:27:31] Map initialized successfully
+[2025-05-28 14:27:31] Map initialized successfully
+[2025-05-28 14:27:31] Logger initialized
+[2025-05-28 14:27:31] INFO: === APPLICATION STARTUP ===
+[2025-05-28 14:27:31] INFO: MainWindow constructor started
+[2025-05-28 14:27:31] INFO: Initializing ConfigurationService
+[2025-05-28 14:27:31] INFO: Initializing NexradService
+[2025-05-28 14:27:31] INFO: Initializing NexradService
+[2025-05-28 14:27:31] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 14:27:31] INFO: NexradService initialization completed
+[2025-05-28 14:27:31] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 14:27:31] INFO: Refresh timer initialized and started
+[2025-05-28 14:27:31] INFO: MainWindow constructor completed successfully
+[2025-05-28 14:27:31] Application startup completed in 613.4051ms
+[2025-05-28 14:27:32] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 14:27:32] INFO: Station: KFWS, Product: BaseReflectivity
+[2025-05-28 14:27:32] INFO: MapControl available, map object: Available
+[2025-05-28 14:27:32] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 14:27:32] INFO: === GetLatestScanAsync START ===
+[2025-05-28 14:27:32] INFO: Requested: StationId=KFWS, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 14:27:32] ERROR: Station KFWS not found in station list
+[2025-05-28 14:27:32] INFO: Available stations: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+[2025-05-28 14:27:32] ERROR: GetLatestScanAsync returned null for station KFWS, product BaseReflectivity
+[2025-05-28 14:27:32] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 14:29:22] Application exiting with code 0
+[2025-05-28 14:31:15] Logger initialized
+[2025-05-28 14:31:15] Application starting
+[2025-05-28 14:31:15] === Application Paths ===
+[2025-05-28 14:31:15] Base Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\
+[2025-05-28 14:31:15] Current Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer
+[2025-05-28 14:31:15] Logs Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Logs (Exists: False)
+[2025-05-28 14:31:15] Data Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\Data (Exists: True)
+[2025-05-28 14:31:15] Map Directory: C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\bin\Debug\net8.0\MapData (Exists: True)
+[2025-05-28 14:31:15] ========================
+[2025-05-28 14:31:15] XAML loaded successfully
+[2025-05-28 14:31:15] Creating main window
+[2025-05-28 14:31:15] Map initialized successfully
+[2025-05-28 14:31:15] Map initialized successfully
+[2025-05-28 14:31:16] Logger initialized
+[2025-05-28 14:31:16] INFO: === APPLICATION STARTUP ===
+[2025-05-28 14:31:16] INFO: MainWindow constructor started
+[2025-05-28 14:31:16] INFO: Initializing ConfigurationService
+[2025-05-28 14:31:16] INFO: Initializing NexradService
+[2025-05-28 14:31:16] INFO: Initializing NexradService
+[2025-05-28 14:31:16] INFO: Configuration loaded: MaxStationsForComposite=160
+[2025-05-28 14:31:16] INFO: Loading stations from: Data\stations.json
+[2025-05-28 14:31:16] INFO: File exists: True
+[2025-05-28 14:31:16] INFO: JSON file size: 11785 characters
+[2025-05-28 14:31:16] INFO: Deserialized 60 stations from JSON
+[2025-05-28 14:31:16] INFO: First station: Id=KABR, Name=Aberdeen, Lat=0, Lon=0
+[2025-05-28 14:31:16] INFO: KFWS found: Dallas/Ft. Worth at 0, 0
+[2025-05-28 14:31:16] INFO: NexradService initialization completed
+[2025-05-28 14:31:16] INFO: Configuration loaded - RefreshInterval: 5, LayerOpacity: 0.8, MapType: Street, AutoLoadNationwide: False
+[2025-05-28 14:31:16] INFO: Refresh timer initialized and started
+[2025-05-28 14:31:16] INFO: MainWindow constructor completed successfully
+[2025-05-28 14:31:16] Application startup completed in 653.7888ms
+[2025-05-28 14:31:16] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 14:31:16] INFO: Station: KDIX, Product: BaseReflectivity
+[2025-05-28 14:31:16] INFO: MapControl available, map object: Available
+[2025-05-28 14:31:16] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 14:31:16] INFO: === GetLatestScanAsync START ===
+[2025-05-28 14:31:16] INFO: Requested: StationId=KDIX, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 14:31:16] INFO: Station found: Philadelphia at 0, 0
+[2025-05-28 14:31:16] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 14:31:16] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 14:31:17] INFO: Level 2 decoder result: NULL
+[2025-05-28 14:31:17] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 14:31:17] INFO: Attempting RadarDataProcessor for KDIX, BaseReflectivity
+[2025-05-28 14:31:17] INFO: RadarDataProcessor result: 1446 gates
+[2025-05-28 14:31:17] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 14:31:17] INFO: Scan returned: StationId=KDIX, ProductType=BaseReflectivity, Gates=1446, Mode=
+[2025-05-28 14:31:17] INFO: Sample gate data: Lat=0.17986432118374612, Lon=0, Value=40.3272283843929
+[2025-05-28 14:31:17] INFO: Calling AddRadarLayer...
+[2025-05-28 14:31:17] INFO: Adding station marker: Philadelphia at 0, 0
+[2025-05-28 14:31:17] INFO: Radar data loaded successfully: 1446 gates
+[2025-05-28 14:31:17] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 14:31:17] INFO: === REFRESH RADAR DATA START ===
+[2025-05-28 14:31:17] INFO: Station: KDIX, Product: BaseReflectivity
+[2025-05-28 14:31:17] INFO: MapControl available, map object: Available
+[2025-05-28 14:31:17] INFO: Calling NexradService.GetLatestScanAsync...
+[2025-05-28 14:31:17] INFO: === GetLatestScanAsync START ===
+[2025-05-28 14:31:17] INFO: Requested: StationId=KDIX, Product=BaseReflectivity, TiltIndex=0
+[2025-05-28 14:31:17] INFO: Station found: Philadelphia at 0, 0
+[2025-05-28 14:31:17] INFO: Product type analysis: IsLevel2=True
+[2025-05-28 14:31:17] INFO: Attempting Level 2 decoder for BaseReflectivity
+[2025-05-28 14:31:18] INFO: Level 2 decoder result: NULL
+[2025-05-28 14:31:18] WARNING: Level 2 decoder returned null or empty data
+[2025-05-28 14:31:18] INFO: Attempting RadarDataProcessor for KDIX, BaseReflectivity
+[2025-05-28 14:31:18] INFO: RadarDataProcessor result: 1463 gates
+[2025-05-28 14:31:18] INFO: === GetLatestScanAsync END (DataProcessor Success) ===
+[2025-05-28 14:31:18] INFO: Scan returned: StationId=KDIX, ProductType=BaseReflectivity, Gates=1463, Mode=
+[2025-05-28 14:31:18] INFO: Sample gate data: Lat=0.35972864236749225, Lon=0, Value=13.951453181246585
+[2025-05-28 14:31:18] INFO: Calling AddRadarLayer...
+[2025-05-28 14:31:18] INFO: Adding station marker: Philadelphia at 0, 0
+[2025-05-28 14:31:18] INFO: Radar data loaded successfully: 1463 gates
+[2025-05-28 14:31:18] INFO: === REFRESH RADAR DATA END ===
+[2025-05-28 19:43:12] Application exiting with code 0

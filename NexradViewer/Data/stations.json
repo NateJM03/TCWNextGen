@@ -1,0 +1,602 @@
+[
+  {
+    "id": "KABR",
+    "name": "Aberdeen",
+    "state": "SD",
+    "country": "US",
+    "lat": 45.4556,
+    "lon": -98.4131,
+    "elevation": 397.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KABX",
+    "name": "Albuquerque",
+    "state": "NM",
+    "country": "US",
+    "lat": 35.1497,
+    "lon": -106.8236,
+    "elevation": 1789.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KAKQ",
+    "name": "Norfolk/Richmond",
+    "state": "VA",
+    "country": "US",
+    "lat": 36.9839,
+    "lon": -77.0072,
+    "elevation": 34.4,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KAMA",
+    "name": "Amarillo",
+    "state": "TX",
+    "country": "US",
+    "lat": 35.2336,
+    "lon": -101.7092,
+    "elevation": 1093.6,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KAMX",
+    "name": "Miami",
+    "state": "FL",
+    "country": "US",
+    "lat": 25.6111,
+    "lon": -80.4128,
+    "elevation": 4.6,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KAPX",
+    "name": "Gaylord",
+    "state": "MI",
+    "country": "US",
+    "lat": 44.9069,
+    "lon": -84.7197,
+    "elevation": 446.3,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KARX",
+    "name": "La Crosse",
+    "state": "WI",
+    "country": "US",
+    "lat": 43.8228,
+    "lon": -91.1911,
+    "elevation": 389.9,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KATX",
+    "name": "Seattle/Tacoma",
+    "state": "WA",
+    "country": "US",
+    "lat": 48.1944,
+    "lon": -122.4958,
+    "elevation": 151.8,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBBX",
+    "name": "Sacramento",
+    "state": "CA",
+    "country": "US",
+    "lat": 39.4956,
+    "lon": -121.6317,
+    "elevation": 52.6,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBGM",
+    "name": "Binghamton",
+    "state": "NY",
+    "country": "US",
+    "lat": 42.1997,
+    "lon": -75.985,
+    "elevation": 490.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBHX",
+    "name": "Eureka",
+    "state": "CA",
+    "country": "US",
+    "lat": 40.4983,
+    "lon": -124.2919,
+    "elevation": 732.8,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBIS",
+    "name": "Bismarck",
+    "state": "ND",
+    "country": "US",
+    "lat": 46.7708,
+    "lon": -100.7603,
+    "elevation": 505.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBMX",
+    "name": "Birmingham",
+    "state": "AL",
+    "country": "US",
+    "lat": 33.1722,
+    "lon": -86.7697,
+    "elevation": 197.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBOX",
+    "name": "Boston",
+    "state": "MA",
+    "country": "US",
+    "lat": 41.9558,
+    "lon": -71.1369,
+    "elevation": 36.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBRO",
+    "name": "Brownsville",
+    "state": "TX",
+    "country": "US",
+    "lat": 25.9156,
+    "lon": -97.4186,
+    "elevation": 7.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBUF",
+    "name": "Buffalo",
+    "state": "NY",
+    "country": "US",
+    "lat": 42.9489,
+    "lon": -78.7367,
+    "elevation": 211.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KBYX",
+    "name": "Key West",
+    "state": "FL",
+    "country": "US",
+    "lat": 24.5975,
+    "lon": -81.7031,
+    "elevation": 2.4,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCAE",
+    "name": "Columbia",
+    "state": "SC",
+    "country": "US",
+    "lat": 33.9486,
+    "lon": -81.1186,
+    "elevation": 70.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCBW",
+    "name": "Caribou",
+    "state": "ME",
+    "country": "US",
+    "lat": 46.0392,
+    "lon": -67.8036,
+    "elevation": 227.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCBX",
+    "name": "Boise",
+    "state": "ID",
+    "country": "US",
+    "lat": 43.4906,
+    "lon": -116.2367,
+    "elevation": 932.7,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCCX",
+    "name": "State College",
+    "state": "PA",
+    "country": "US",
+    "lat": 40.9228,
+    "lon": -78.0033,
+    "elevation": 733.6,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCLE",
+    "name": "Cleveland",
+    "state": "OH",
+    "country": "US",
+    "lat": 41.4133,
+    "lon": -81.86,
+    "elevation": 232.6,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCLX",
+    "name": "Charleston",
+    "state": "SC",
+    "country": "US",
+    "lat": 32.6556,
+    "lon": -81.0422,
+    "elevation": 30.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCRI",
+    "name": "Norman (Test)",
+    "state": "OK",
+    "country": "US",
+    "lat": 35.2383,
+    "lon": -97.4603,
+    "elevation": 370.9,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCRP",
+    "name": "Corpus Christi",
+    "state": "TX",
+    "country": "US",
+    "lat": 27.7839,
+    "lon": -97.5111,
+    "elevation": 14.3,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCXX",
+    "name": "Burlington",
+    "state": "VT",
+    "country": "US",
+    "lat": 44.5111,
+    "lon": -73.1669,
+    "elevation": 317.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KCYS",
+    "name": "Cheyenne",
+    "state": "WY",
+    "country": "US",
+    "lat": 41.1519,
+    "lon": -104.8061,
+    "elevation": 1868.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDAX",
+    "name": "Sacramento",
+    "state": "CA",
+    "country": "US",
+    "lat": 38.5011,
+    "lon": -121.6778,
+    "elevation": 9.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDDC",
+    "name": "Dodge City",
+    "state": "KS",
+    "country": "US",
+    "lat": 37.7608,
+    "lon": -99.9689,
+    "elevation": 788.5,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDFX",
+    "name": "Laughlin AFB",
+    "state": "TX",
+    "country": "US",
+    "lat": 29.2728,
+    "lon": -100.2803,
+    "elevation": 348.4,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDIX",
+    "name": "Philadelphia",
+    "state": "NJ",
+    "country": "US",
+    "lat": 39.9469,
+    "lon": -74.4108,
+    "elevation": 45.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDLH",
+    "name": "Duluth",
+    "state": "MN",
+    "country": "US",
+    "lat": 46.8369,
+    "lon": -92.2097,
+    "elevation": 435.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDMX",
+    "name": "Des Moines",
+    "state": "IA",
+    "country": "US",
+    "lat": 41.7311,
+    "lon": -93.7233,
+    "elevation": 299.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDOX",
+    "name": "Dover AFB",
+    "state": "DE",
+    "country": "US",
+    "lat": 38.8256,
+    "lon": -75.44,
+    "elevation": 15.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDTX",
+    "name": "Detroit",
+    "state": "MI",
+    "country": "US",
+    "lat": 42.6997,
+    "lon": -83.4717,
+    "elevation": 326.7,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDVN",
+    "name": "Quad Cities",
+    "state": "IA",
+    "country": "US",
+    "lat": 41.6111,
+    "lon": -90.5806,
+    "elevation": 229.5,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KDYX",
+    "name": "Dyess AFB",
+    "state": "TX",
+    "country": "US",
+    "lat": 32.5383,
+    "lon": -99.2542,
+    "elevation": 461.8,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KEAX",
+    "name": "Kansas City",
+    "state": "MO",
+    "country": "US",
+    "lat": 38.81,
+    "lon": -94.2644,
+    "elevation": 304.5,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KEMX",
+    "name": "Tucson",
+    "state": "AZ",
+    "country": "US",
+    "lat": 31.8939,
+    "lon": -110.6303,
+    "elevation": 1586.5,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KENX",
+    "name": "Albany",
+    "state": "NY",
+    "country": "US",
+    "lat": 42.5861,
+    "lon": -74.0639,
+    "elevation": 557.8,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KEOX",
+    "name": "Fort Rucker",
+    "state": "AL",
+    "country": "US",
+    "lat": 31.4603,
+    "lon": -85.4592,
+    "elevation": 132.6,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KEPZ",
+    "name": "El Paso",
+    "state": "TX",
+    "country": "US",
+    "lat": 31.8731,
+    "lon": -106.6981,
+    "elevation": 1251.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KESX",
+    "name": "Las Vegas",
+    "state": "NV",
+    "country": "US",
+    "lat": 35.7011,
+    "lon": -114.8914,
+    "elevation": 1483.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KEVX",
+    "name": "Mobile",
+    "state": "AL",
+    "country": "US",
+    "lat": 30.5644,
+    "lon": -85.9214,
+    "elevation": 42.7,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KFCX",
+    "name": "Roanoke",
+    "state": "VA",
+    "country": "US",
+    "lat": 37.0242,
+    "lon": -80.2736,
+    "elevation": 874.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KFDR",
+    "name": "Frederick",
+    "state": "OK",
+    "country": "US",
+    "lat": 34.3622,
+    "lon": -98.9764,
+    "elevation": 383.4,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KFDX",
+    "name": "Cannon AFB",
+    "state": "NM",
+    "country": "US",
+    "lat": 34.6342,
+    "lon": -103.6294,
+    "elevation": 1417.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KFFC",
+    "name": "Atlanta",
+    "state": "GA",
+    "country": "US",
+    "lat": 33.3636,
+    "lon": -84.5658,
+    "elevation": 262.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KFSD",
+    "name": "Sioux Falls",
+    "state": "SD",
+    "country": "US",
+    "lat": 43.5878,
+    "lon": -96.7294,
+    "elevation": 435.9,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KFSX",
+    "name": "Flagstaff",
+    "state": "AZ",
+    "country": "US",
+    "lat": 34.5742,
+    "lon": -111.1978,
+    "elevation": 2261.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KFWS",
+    "name": "Dallas/Ft. Worth",
+    "state": "TX",
+    "country": "US",
+    "lat": 32.5731,
+    "lon": -97.3031,
+    "elevation": 208.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGGW",
+    "name": "Glasgow",
+    "state": "MT",
+    "country": "US",
+    "lat": 48.2064,
+    "lon": -106.6247,
+    "elevation": 693.4,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGJX",
+    "name": "Grand Junction",
+    "state": "CO",
+    "country": "US",
+    "lat": 39.0622,
+    "lon": -108.2133,
+    "elevation": 3060.8,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGLD",
+    "name": "Goodland",
+    "state": "KS",
+    "country": "US",
+    "lat": 39.7669,
+    "lon": -101.7069,
+    "elevation": 1113.7,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGRB",
+    "name": "Green Bay",
+    "state": "WI",
+    "country": "US",
+    "lat": 44.4989,
+    "lon": -88.1111,
+    "elevation": 208.2,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGRK",
+    "name": "Fort Hood",
+    "state": "TX",
+    "country": "US",
+    "lat": 30.7217,
+    "lon": -97.3828,
+    "elevation": 164.0,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGRR",
+    "name": "Grand Rapids",
+    "state": "MI",
+    "country": "US",
+    "lat": 42.8936,
+    "lon": -85.5447,
+    "elevation": 236.5,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGSP",
+    "name": "Greer",
+    "state": "SC",
+    "country": "US",
+    "lat": 34.8833,
+    "lon": -82.2197,
+    "elevation": 287.4,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGWX",
+    "name": "Columbus AFB",
+    "state": "MS",
+    "country": "US",
+    "lat": 33.8969,
+    "lon": -88.3292,
+    "elevation": 145.1,
+    "type": "NEXRAD WSR-88D"
+  },
+  {
+    "id": "KGYX",
+    "name": "Portland",
+    "state": "ME",
+    "country": "US",
+    "lat": 43.8914,
+    "lon": -70.2567,
+    "elevation": 125.0,
+    "type": "NEXRAD WSR-88D"
+  }
+]

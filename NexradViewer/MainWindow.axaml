@@ -1,0 +1,245 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:NexradViewer.Controls"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="NexradViewer.MainWindow"
+        Title="TheClearWeather | NextGenRadar" Width="1280" Height="800"
+        FontFamily="Nebula Sans, Segoe UI, Tahoma, Arial, sans-serif">
+
+    <Grid Name="RootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Header -->
+            <RowDefinition Height="Auto"/> <!-- Toolbar -->
+            <RowDefinition Height="*"/>    <!-- Main Content -->
+            <RowDefinition Height="Auto"/> <!-- Status Bar -->
+        </Grid.RowDefinitions>
+        
+        <!-- Header with TheClearWeather | NextGenRadar branding -->
+        <Grid Grid.Row="0" Background="#1A1A2E" Height="60">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="TheClearWeather | NextGenRadar" 
+                           FontWeight="Bold" 
+                           FontSize="24" 
+                           Foreground="White"
+                           VerticalAlignment="Center"
+                           Margin="20,0,0,0"/>
+            </StackPanel>
+        </Grid>
+        
+        <!-- Toolbar -->
+        <Grid Grid.Row="1" Background="#282840" Height="50">
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBlock Text="Radar Station:" Foreground="White" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <ComboBox Name="StationComboBox" Width="150" VerticalAlignment="Center"/>
+                
+                <TextBlock Text="Product:" Foreground="White" VerticalAlignment="Center" Margin="15,0,5,0"/>
+                <ComboBox Name="ProductComboBox" Width="175" VerticalAlignment="Center"/>
+                
+                <StackPanel Orientation="Horizontal" Margin="15,0,0,0">
+                    <TextBlock Text="Side-by-Side:" Foreground="White" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <ToggleSwitch Name="SideBySideToggle" OnContent="" OffContent="" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Name="SecondProductPanel" Orientation="Horizontal" Margin="15,0,0,0" IsVisible="False">
+                    <TextBlock Text="Second Product:" Foreground="White" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <ComboBox Name="SecondProductComboBox" Width="175" VerticalAlignment="Center"/>
+                </StackPanel>
+                
+                <Button Name="RefreshButton" Content="Refresh" Margin="15,0,0,0" Background="#4040A0" Foreground="White"/>
+                <Button Name="NationwideViewButton" Content="Nationwide View" Margin="10,0,0,0" Background="#4040A0" Foreground="White"/>
+                <Button Name="SettingsButton" Content="⚙️" Margin="10,0,0,0" Background="#4040A0" Foreground="White"/>
+                <Button Name="HelpButton" Content="?" Margin="10,0,0,0" Background="#4040A0" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+        
+        <!-- Main Content -->
+        <Grid Grid.Row="2" Name="MainGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0"/> <!-- This will be changed to * when side-by-side is enabled -->
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Primary Map -->
+            <controls:MapControl Grid.Column="0" Name="MapControl"/>
+            
+            <!-- Secondary Map (for side-by-side comparison) -->
+            <controls:MapControl Grid.Column="1" Name="SecondMapControl" IsVisible="False"/>
+            
+            <!-- Controls Panel -->
+            <Border Grid.Column="2" Background="#222236" BorderBrush="#333350" BorderThickness="1,0,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Layer Controls -->
+                    <Expander Grid.Row="0" Header="Layer Controls" Foreground="White" Margin="5" IsExpanded="True">
+                        <StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Map Type:" Foreground="White" VerticalAlignment="Center"/>
+                                <ComboBox Grid.Row="0" Grid.Column="1" Name="MapTypeComboBox" Margin="5,5,0,5" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <ComboBoxItem>Street</ComboBoxItem>
+                                    <ComboBoxItem>Satellite</ComboBoxItem>
+                                    <ComboBoxItem>Terrain</ComboBoxItem>
+                                    <ComboBoxItem>Dark</ComboBoxItem>
+                                </ComboBox>
+                                
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="Opacity:" Foreground="White" VerticalAlignment="Center"/>
+                                <Slider Grid.Row="1" Grid.Column="1" Name="OpacitySlider" Minimum="0.1" Maximum="1.0" Value="0.8" Margin="5,5,0,5"/>
+                                
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="Warnings:" Foreground="White" VerticalAlignment="Center"/>
+                                <ToggleSwitch Grid.Row="2" Grid.Column="1" Name="WarningsToggle" OnContent="" OffContent="" Margin="5,5,0,5"/>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                    
+                    <!-- Auto-refresh Controls -->
+                    <Expander Grid.Row="1" Header="Auto-refresh" Foreground="White" Margin="5" IsExpanded="True">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Enable:" Foreground="White" VerticalAlignment="Center"/>
+                            <ToggleSwitch Grid.Row="0" Grid.Column="1" Name="AutoRefreshToggle" OnContent="" OffContent="" Margin="5"/>
+                            
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Interval:" Foreground="White" VerticalAlignment="Center"/>
+                            <ComboBox Grid.Row="1" Grid.Column="1" Name="RefreshIntervalComboBox" Margin="5" HorizontalAlignment="Stretch"/>
+                        </Grid>
+                    </Expander>
+                    
+                    <!-- Quick Actions -->
+                    <Expander Grid.Row="2" Header="Quick Actions" Foreground="White" Margin="5" IsExpanded="True">
+                        <StackPanel>
+                            <Button Name="DownloadMapButton" Content="Download US Map" HorizontalAlignment="Stretch" Margin="0,5"/>
+                            <Button Name="AlertCategoriesButton" Content="Alert Categories" HorizontalAlignment="Stretch" Margin="0,5"/>
+                            
+                            <!-- Time-based Controls (Only visible for station views) -->
+                            <StackPanel Name="TimeControlsPanel" IsVisible="False">
+                                <Separator Margin="0,5"/>
+                                <TextBlock Text="Time Playback" Foreground="White" FontWeight="Bold"/>
+                                <StackPanel Orientation="Horizontal" Margin="0,5">
+                                    <Button Name="PlayButton" Content="▶" Width="40"/>
+                                    <Button Name="PauseButton" Content="⏸" Width="40" Margin="5,0"/>
+                                    <Button Name="StopButton" Content="⏹" Width="40"/>
+                                    <ComboBox Name="SpeedComboBox" Width="80" Margin="5,0,0,0">
+                                        <ComboBoxItem>1x</ComboBoxItem>
+                                        <ComboBoxItem>2x</ComboBoxItem>
+                                        <ComboBoxItem>3x</ComboBoxItem>
+                                    </ComboBox>
+                                </StackPanel>
+                                <Slider Name="TimeSlider" Margin="0,5"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Expander>
+                    
+                    <!-- Console Output -->
+                    <Expander Grid.Row="3" Header="System Console" Foreground="White" Margin="5" IsExpanded="True">
+                        <ScrollViewer>
+                            <TextBlock Name="ConsoleText" TextWrapping="Wrap" FontFamily="Consolas" FontSize="12" Foreground="#CCCCCC"/>
+                        </ScrollViewer>
+                    </Expander>
+                </Grid>
+            </Border>
+        </Grid>
+        
+        <!-- Status Bar -->
+        <Grid Grid.Row="3" Background="#181830" Height="30">
+            <DockPanel LastChildFill="False">
+                <TextBlock Text="Status: Ready" Name="StatusText" Foreground="#CCCCCC" VerticalAlignment="Center" Margin="10,0" DockPanel.Dock="Left"/>
+                <TextBlock Text="Last Update: Never" Name="LastUpdateText" Foreground="#CCCCCC" VerticalAlignment="Center" Margin="10,0" DockPanel.Dock="Left"/>
+                <TextBlock Text="TheClearWeather | NextGenRadar v2.0" Foreground="#CCCCCC" VerticalAlignment="Center" Margin="10,0" DockPanel.Dock="Right"/>
+            </DockPanel>
+        </Grid>
+        
+        <!-- Settings Popup -->
+        <Popup Name="SettingsPopup" PlacementMode="Center" Width="500" Height="400" IsLightDismissEnabled="True">
+            <Border Background="#222236" BorderBrush="#4040A0" BorderThickness="2" CornerRadius="5">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <TextBlock Grid.Row="0" Text="Settings" Foreground="White" FontWeight="Bold" FontSize="20" Margin="0,0,0,15"/>
+                    
+                    <ScrollViewer Grid.Row="1">
+                        <StackPanel>
+                            <Expander Header="General" Foreground="White" Margin="0,0,0,10" IsExpanded="True">
+                                <StackPanel>
+                                    <CheckBox Name="AutoStartNationwideCheckBox" Content="Auto-load nationwide view on startup" Foreground="White" Margin="0,5"/>
+                                    <CheckBox Name="ShowStationsCheckBox" Content="Show radar stations on map" IsChecked="True" Foreground="White" Margin="0,5"/>
+                                    <CheckBox Name="EnableSmoothPanningCheckBox" Content="Enable smooth panning and zooming" IsChecked="True" Foreground="White" Margin="0,5"/>
+                                </StackPanel>
+                            </Expander>
+                            
+                            <Expander Header="Appearance" Foreground="White" Margin="0,0,0,10" IsExpanded="True">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Theme:" Foreground="White" VerticalAlignment="Center" Margin="0,5"/>
+                                    <ComboBox Grid.Row="0" Grid.Column="1" Name="ThemeComboBox" Margin="5">
+                                        <ComboBoxItem>Dark (Default)</ComboBoxItem>
+                                        <ComboBoxItem>Light</ComboBoxItem>
+                                    </ComboBox>
+                                    
+                                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Font Size:" Foreground="White" VerticalAlignment="Center" Margin="0,5"/>
+                                    <ComboBox Grid.Row="1" Grid.Column="1" Name="FontSizeComboBox" Margin="5">
+                                        <ComboBoxItem>Small</ComboBoxItem>
+                                        <ComboBoxItem>Medium</ComboBoxItem>
+                                        <ComboBoxItem>Large</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
+                            </Expander>
+                            
+                            <Expander Header="Performance" Foreground="White" IsExpanded="True">
+                                <StackPanel>
+                                    <CheckBox Name="AnimateLayersCheckBox" Content="Animate layer transitions" IsChecked="True" Foreground="White" Margin="0,5"/>
+                                    <TextBlock Text="Cache Size:" Foreground="White" Margin="0,5"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Name="CacheSizeTextBlock" Text="0 MB" Foreground="White"/>
+                                        <Button Name="ClearCacheButton" Content="Clear Cache" Margin="10,0,0,0"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Expander>
+                        </StackPanel>
+                    </ScrollViewer>
+                    
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+                        <Button Name="DefaultSettingsButton" Content="Reset to Defaults" Margin="0,0,10,0"/>
+                        <Button Name="CloseSettingsButton" Content="Close"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Popup>
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+This directory holds offline map files for the NexradViewer application.
+
+For production use, this directory should contain:
+1. A usa_base.png file for the base map of the United States
+2. OR a set of .png files for different map regions
+
+The application will automatically use these map files when available,
+otherwise it will fallback to OSM maps which require internet connectivity.

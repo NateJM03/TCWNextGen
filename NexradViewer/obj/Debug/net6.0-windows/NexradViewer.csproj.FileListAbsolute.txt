@@ -1,0 +1,5 @@
+C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\obj\Debug\net6.0-windows\NexradViewer.csproj.AssemblyReference.cache
+C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\obj\Debug\net6.0-windows\NexradViewer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\obj\Debug\net6.0-windows\NexradViewer.AssemblyInfoInputs.cache
+C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\obj\Debug\net6.0-windows\NexradViewer.AssemblyInfo.cs
+C:\Users\accou\OneDrive\Documents\GitHub\TCWNextGen\NexradViewer\obj\Debug\net6.0-windows\NexradViewer.csproj.CoreCompileInputs.cache
